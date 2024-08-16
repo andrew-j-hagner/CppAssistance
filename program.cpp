@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-	const double RATE_2 = .10;
-	const double RATE_3 = .20;
+	const double RATE_1 = .10;
+	const double RATE_2 = .20;
 
 	int recommended_tithe = 0;
 
@@ -22,11 +22,11 @@ int main()
 	}
 	else if (income <= 80000)
 	{
-		recommended_tithe = RATE_2 * income;
+		recommended_tithe = RATE_1 * income;
 	}
 	else
 	{
-		recommended_tithe = RATE_3 * income;
+		recommended_tithe = RATE_2 * income;
 	}
 
 	cout << "Your total suggested tithe for the year is" << " " << recommended_tithe << endl;
