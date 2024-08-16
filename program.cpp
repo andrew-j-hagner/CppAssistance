@@ -4,30 +4,34 @@ using namespace std;
 
 int main()
 {
-	const double RATE_1 = 0;
-	const double RATE_2 = .10;
-	const double RATE_3 = .20;
+	const double RATE_1 = .10;
+	const double RATE_2 = .20;
 
-	int TITHE_1;
-	int TITHE_2;
-	TITHE_1 = 0;
-	TITHE_2 = 0;
+	int recommended_tithe = 0;
 
 	double income;
+
 	cout << "Please enter your income:" << endl;
 	cin >> income;
+	cout << "Thank you!" << endl;
 
-	cout << "Thank you!";
-
-	if (income <= 45000)
+	if (income <= 40000)
 	{
-		cout << "No tithes suggested, thank you for your support and please pray for us!";
-	}
-	else (income >= 80000);
-
-		TITHE_2 = RATE_2 * income;
-		cout << "Your total suggested tithe for the year is" << " " << TITHE_2 << endl;
-		cout << "Thank you for your donation!";
-
+		cout << "No tithes suggested, thank you for your support and please pray for us!" << endl;
 		return 0;
+	}
+
+	if (income <= 80000)
+	{
+		recommended_tithe = RATE_1 * income;
+	}
+	else
+	{
+		recommended_tithe = RATE_2 * income;
+	}
+
+	cout << "Your total suggested tithe for the year is" << " " << recommended_tithe << endl;
+	cout << "Thank you for your donation!" << endl;
+
+	return 0;
 }
