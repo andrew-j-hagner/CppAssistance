@@ -4,14 +4,12 @@ using namespace std;
 
 int main()
 {
-	const double RATE_1 = 0;
 	const double RATE_2 = .10;
 	const double RATE_3 = .20;
 
-	int TITHE_1;
 	int TITHE_2;
 	int TITHE_3;
-	TITHE_1 = 0;
+
 	TITHE_2 = 0;
 	TITHE_3 = 0;
 
