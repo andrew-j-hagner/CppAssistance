@@ -20,7 +20,8 @@ int main()
 		cout << "No tithes suggested, thank you for your support and please pray for us!" << endl;
 		return 0;
 	}
-	else if (income <= 80000)
+
+	if (income <= 80000)
 	{
 		recommended_tithe = RATE_1 * income;
 	}
