@@ -18,6 +18,7 @@ int main()
 	if (income <= 40000)
 	{
 		cout << "No tithes suggested, thank you for your support and please pray for us!" << endl;
+		return 0;
 	}
 	else if (income <= 80000)
 	{
