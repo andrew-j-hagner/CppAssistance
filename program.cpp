@@ -22,15 +22,14 @@ int main()
 	else if (income <= 80000)
 	{
 		recommended_tithe = RATE_2 * income;
-		cout << "Your total suggested tithe for the year is" << " " << recommended_tithe << endl;
-		cout << "Thank you for your donation!" << endl;
 	}
 	else
 	{
 		recommended_tithe = RATE_3 * income;
-		cout << "Your total suggested tithe for the year is" << " " << recommended_tithe << endl;
-		cout << "Thank you for your donation!" << endl;
 	}
+
+	cout << "Your total suggested tithe for the year is" << " " << recommended_tithe << endl;
+	cout << "Thank you for your donation!" << endl;
 
 	return 0;
 }
